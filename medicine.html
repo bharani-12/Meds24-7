@@ -1,0 +1,585 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine</title>
+    <link rel="icon" href="Images/logo_icon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div style="background-color:#32aeb1;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="mx-5">
+                    <a class="navbar-brand" href="home.html"><img src="Images/LOGO.png" class="rounded-pill"
+                            alt="MEDS24/7" style="width: 150px;height: 50px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="mt-3 mx-5">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search Products"
+                            aria-label="Recipient's username" aria-describedby="button-addon2"
+                            style="padding-right: 350px;">
+                        <button class="btn btn-secondary" type="button" id="button-addon2"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                    height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
+                                </svg> Request Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="cart.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-cart-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                </svg> Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="login.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-person-circle mb-1"
+                                    viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg> Sign in/Sign out</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div style="background-color: #32aeb1;">
+        <ul class="nav justify-content-around ">
+
+            <li class="nav-item">
+                <a class="nav-link text-light" href="medicine.html"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-capsule mb-1" viewBox="0 0 16 16">
+                        <path
+                            d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z" />
+                    </svg> Medicines</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-clock-history mb-1" viewBox="0 0 16 16">
+                        <path
+                            d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                        <path
+                            d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                    </svg> Previously ordered Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-heart-pulse" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Z" />
+                        <path
+                            d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z" />
+                    </svg> Health Tips</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                    </svg> Doctor Support</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container mt-5 mb-5">
+
+        <div class="prescription_products " id="list-nav">
+            <div class="drug-list-col ln-a">
+                <h3>A</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/adhd"> ADHD (9) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/acne"> Acne (564) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/alcohol-addiction"> Alcohol Addiction
+                            (15) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/allergies"> Allergies (1564) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/alzheimer"> Alzheimer (170) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/amoebiasis"> Amoebiasis (23) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/anaemia"> Anaemia (718) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/anaesthesia-local"> Anaesthesia - Local
+                            (92) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/anaesthesia-general"> Anaesthesia
+                            General (7) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/anal-fissure"> Anal Fissure (2) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/angina"> Angina (407) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/anti-scar"> Anti-Scar (2) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/anxiety"> Anxiety (49) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/apnea"> Apnea (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/appetite"> Appetite (70) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/arrhythmiasis"> Arrhythmiasis (33) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/arthritis"> Arthritis (205) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/asthma-copd"> Asthma/COPD (1002) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/auto-immune-disease"> Auto Immune
+                            Disease (326) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/ayurvedic-medicine"> Ayurvedic Medicine
+                            (61) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-b">
+                <h3>B</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/bacterial-infections"> Bacterial
+                            Infections (3000) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/bladder-and-prostate-disorders"> Bladder
+                            And Prostate Disorders (464) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/bleeding-disorders"> Bleeding Disorders
+                            (213) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/blood-clot"> Blood Clot (913) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/bone-metabolism"> Bone Metabolism (113)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/burn"> Burns (6) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-c">
+                <h3>C</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/cns-stimulant"> CNS stimulants (1) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/cancer-oncology"> Cancer/Oncology (1333)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/cardiac-arrest"> Cardiac Arrest (0) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/cholelithiasis-gall-stones">
+                            Cholelithiasis/Gall Stones (153) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/cleanser"> Cleanser (242) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/colon-cleanser"> Colon Cleanser (4) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/constipation"> Constipation (379) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/contraception"> Contraception (96) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/cough-and-cold"> Cough And Cold (1471)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/crack"> Crack (1) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-d">
+                <h3>D</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/dandruff"> Dandruff (132) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/denture-adhesive"> Denture Adhesive (5)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/depression"> Depression (1002) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/diabetes"> Diabetes (6114) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/diagnostic"> Diagnostic (13) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/diarrhoea"> Diarrhoea (410) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/dietary-management"> Dietary Management
+                            (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/digestion"> Digestion (203) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/dry-eye"> Dry Eye (348) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/dry-skin"> Dry Skin (902) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-e">
+                <h3>E</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/ear-conditions"> Ear Conditions (97)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/electrolytes"> Electrolytes (5) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/epilepsy-convulsion">
+                            Epilepsy/Convulsion (1166) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/eye-infections"> Eye Infections (236)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/other-eye-conditions"> Eye conditions
+                            (584) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-f">
+                <h3>F</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/fever"> Fever (502) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/fungal"> Fungal (1299) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/fungal-infections"> Fungal Infections
+                            (2134) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-g">
+                <h3>G</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/gastro-intestinal-motility-disorders">
+                            Gastro Intestinal Motility Disorders (77) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/general"> General-P (105) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/glaucoma"> Glaucoma (247) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/gout"> Gout (166) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-h">
+                <h3>H</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/haematopoiesis"> Haematopoiesis (116)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/haemorrhoid"> Haemorrhoid (62) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hair-color"> Hair Color (8) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hair-loss"> Hair Loss (377) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/head-lice"> Head Lice (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/heart-failure"> Heart Failure (58) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hepatitis-b-infection"> Hepatitis B
+                            Infection (7) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/high-cholesterol"> High Cholesterol
+                            (2068) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hirsutism"> Hirsutism (4) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hormonal-therapy"> Hormonal Therapy
+                            (1424) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hyperpigmentation"> Hyperpigmentation
+                            (250) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hypertension"> Hypertension (5439) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hyperthyroidism"> Hyperthyroidism (25)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hypnosis"> Hypnosis (2) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hyponatremia"> Hyponatremia (24) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hypotension"> Hypotension (38) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/hypothyroidism"> Hypothyroidism (170)
+                        </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-i">
+                <h3>I</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/idiopathic-pulmonary-fibrosis">
+                            Idiopathic Pulmonary Fibrosis (47) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/immune-sera"> Immune Sera (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/immune-suppression"> Immune Suppression
+                            (56) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/immunoglobulins"> Immunoglobulins (13)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/impotence-erectile-dysfunction-ed">
+                            Impotence/Erectile Dysfunction (Ed) (165) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/infection"> Infection (4173) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/inhaler-nebulizer"> Inhaler/Nebulizer
+                            (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/insulin-pen-device"> Insulin Pen
+                            (Device) (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/intermittent-claudication"> Intermittent
+                            Claudication (31) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/iron-supplement-anaemia"> Iron
+                            Supplement/Anaemia (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/itching-dry-skin"> Itching/Dry Skin (5)
+                        </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-k">
+                <h3>K</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/kidney-disease-stones"> Kidney
+                            Disease/Stones (189) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-l">
+                <h3>L</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/lymphoedema"> LYMPHOEDEMA (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/leprosy"> Leprosy (4) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/liver-disease"> Liver Diseases (127)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/liver-supplement"> Liver Supplement (1)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/lubrication"> Lubrication (4) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-m">
+                <h3>M</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/malarial"> Malarial (217) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/melasma"> Melasma (8) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/migraine"> Migraine (181) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/multiple-sclerosis"> Multiple Sclerosis
+                            (7) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/muscle-cramps-spasticity"> Muscle
+                            Cramps/Spasticity (353) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/muscle-spasm"> Muscle Spasm (465) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/myasthenia-gravis"> Myasthenia Gravis
+                            (7) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/mydriasis"> Mydriasis (61) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-n">
+                <h3>N</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/nappy-rash"> Nappy Rash (3) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/nasal-congestion"> Nasal Congestion
+                            (263) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/neuropathic-pain"> Neuropathic Pain
+                            (1048) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/nootropics-and-neurotrophics">
+                            Nootropics And Neurotrophics (307) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-o">
+                <h3>O</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/obese"> Obese (6) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/obesity"> Obesity (2) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/oral-care"> Oral Care (374) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/osteoporosis"> Osteoporosis (96) </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-p">
+                <h3>P</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/pain"> Pain relief (2998) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/parasitic-worms"> Parasitic Worms (278)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/parkinson"> Parkinsonism (157) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/patanjali-ayurvedic"> Patanjali
+                            Ayurvedic (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/pen-device"> Pen (Device) (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/peripheral-hypertension"> Peripheral
+                            Hypertension (18) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/peripheral-vascular-disease"> Peripheral
+                            Vascular Disease (13) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/poisoning-overdose"> Poisoning/Overdose
+                            (48) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/polycystic-ovary-syndrome-pcos">
+                            Polycystic ovary syndrome(PCOS) (4) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/pregnancy-testing-kit"> Pregnancy
+                            Testing Kit (5) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/premature-ejaculation"> Premature
+                            Ejaculation (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/psoriasis"> Psoriasis (12) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/psoriasis-seborrhea-ichthyosis">
+                            Psoriasis/Seborrhea/Ichthyosis (146) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/psychosis"> Psychosis (305) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/pulmonary-arterial-hypertension-pah">
+                            Pulmonary Arterial Hypertension (Pah) (2) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-r">
+                <h3>R</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/rabies"> Rabies (12) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/rheumatoid-arthritis"> Rheumatoid
+                            Arthritis (29) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-s">
+                <h3>S</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/sanitizer"> Sanitizer (11) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/scabies"> Scabies (121) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/scar"> Scar (20) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/schizophrenia"> Schizophrenia (542) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/skin-infections"> Skin Infections (1306)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/smoking"> Smoking cessation (14) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/stretch-marks"> Stretch Marks (18) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/sun-protectors"> Sun Protectors (41)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/sunscreen-preparations"> Sunscreen
+                            Preparations (121) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/supplement"> Supplements (6947) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/surgicals"> Surgicals (62) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/syringe"> Syringe (0) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-t">
+                <h3>T</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/targeted-cancer-therapy"> Targeted
+                            Cancer Therapy (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/tetanus"> Tetanus (4) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/thrombotic-disorder"> Thrombotic
+                            Disorder (147) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/tuberculosis-tb"> Tuberculosis (Tb) (0)
+                        </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-u">
+                <h3>U</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/ulcer-reflux-flatulence">
+                            Ulcer/Reflux/Flatulence (2860) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/ulcerative-colitis-bowel-inflammatory-disease">
+                            Ulcerative Colitis/Bowel Inflammatory Disease (130) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/urinary-retention"> Urinary Retention
+                            (96) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/uterus-conditions"> Uterus Conditions
+                            (74) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/uti-infections"> Uti Infections (7) </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-v">
+                <h3>V</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/vaccines"> Vaccines (114) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vaginal-capsules"> Vaginal Capsules (2)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vaginal-conditions"> Vaginal Conditions
+                            (78) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/varicose-veins"> Varicose Veins (27)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vertigo"> Vertigo (272) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/viral"> Viral infections (364) </a>
+                    </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vitamin-b12"> Vitamin B12 (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vitamin-c-supplements"> Vitamin
+                            C/Supplements (1) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vitamin-d3"> Vitamin D3 (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vitamin-e"> Vitamin E (0) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vitiligo"> Vitiligo (13) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/vomitting-emesis"> Vomitting/Emesis
+                            (410) </a> </li>
+                </ul>
+            </div>
+            <div class="drug-list-col ln-w">
+                <h3>W</h3>
+                <ul class="alpha-drug-list" style="list-style-type:none;">
+                    <li> <a href="https://www.netmeds.com/prescriptions/warts-calluses-other-skin-lesion">
+                            Warts/Calluses/Other Skin Lesion (28) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/weight-loss"> Weight Loss (Pharma) (27)
+                        </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/wound"> Wound Care (205) </a> </li>
+                    <li> <a href="https://www.netmeds.com/prescriptions/wrinkle-anti-ageing"> Wrinkle/Anti
+                            Ageing (20) </a> </li>
+                </ul>
+            </div>
+            <li class="ln-no-match listNavHide" style="list-style-type:none;">No matching entries</li>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="mt-2 mb-2">
+                        <a href="home.html"><img src="Images/LOGO.png" class="rounded-pill" alt="MEDS24/7"
+                                style="width: 150px;height: 50px;"></a>
+                    </div>
+
+                    <p>Meds24/7 is one of India’s most trusted pharmacies, dispensing quality medicines at reasonable
+                        prices to happy customers – PAN India.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold " style="color:#32aeb1;">useful links</h5>
+                    <p>
+                        <a href="about.html" class="text-white" style="text-decoration:none">About Meds24/7</a>
+                    </p>
+                    <p>
+                        <a href="feedback.html" class="text-white" style="text-decoration:none">Customer FeedBacks</a>
+                    </p>
+                    <p>
+                        <a href="terms.html" class="text-white" style="text-decoration:none">Terms and Conditions</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white" style="text-decoration:none">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold " style="color:#32aeb1;">shopping</h5>
+                    <p>
+                        <a href="medicine.html" class="text-white" style="text-decoration:none">Browse by A-Z</a>
+                    </p>
+                    <p>
+                        <a href="medicine.html" class="text-white" style="text-decoration:none">Browse by
+                            Manufacturers</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration:none">Offers/Coupons</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-white" style="text-decoration:none">FAQs</a>
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold " style="color:#32aeb1;">contact</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>Coimbatore, TN, India
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>meds24/7@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>+91 9876543210
+                    </p>
+                    <p>
+                        <i class="fas fa-print mr-3"></i>256 245 635
+                    </p>
+                </div>
+            </div>
+            <br class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright © 2023 All Rights Reserved by
+                        <a href="home.html" style="text-decoration: none">
+                            <strong style="color: #32aeb1;">Meds24/7</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-3">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline ">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <liclass="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-twitter"></i></a>
+                                </li>
+                                <liclass="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                            class="fab fa-github"></i></a>
+                                    </li>
+                                    <liclass="list-inline-item">
+                                        <a href="#" class="btn-floating btn-sm text-white " style="font-size: 23px;"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
