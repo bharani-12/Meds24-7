@@ -53,3 +53,11 @@ a {
     text-decoration: none;
 
 }
+
+.cardbg {
+    background: #f3f7fb;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #24aeb1), color-stop(30%, #f3f7fb));
+    background: linear-gradient(180deg, #24aeb1 40%, #f3f7fb 30%);
+    margin: 0 -16px 6px;
+    position: relative;
+}
