@@ -17,6 +17,10 @@
     overflow: hidden;
 }
 
+.card:hover{
+    transform: scale(1.2);
+}
+
 .carditem {
     padding: 14px 16px 15px 16px;
     margin: 0 12px 12px 0;
@@ -33,6 +37,7 @@
 .card {
     margin: 0.5em;
     width: calc(100%/3);
+    transition: transform .5s;
 }
 
 .prescription_products {

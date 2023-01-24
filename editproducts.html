@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="admin.css">
-    <title>Admin</title>
+    <title>Edit Products</title>
     <link rel="icon" href="Images/logo_icon.jpg" type="image/x-icon">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -22,7 +24,8 @@
         <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
             <div class="position-sticky">
                 <div class="list-group list-group-flush mx-3 mt-4">
-                    <a href="admindashboard.html" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+                    <a href="admindashboard.html" class="list-group-item list-group-item-action py-2 ripple "
+                        aria-current="true">
                         <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -49,7 +52,7 @@
                             <path
                                 d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.493 4.493 0 0 0 12.5 8a4.493 4.493 0 0 0-3.59 1.787A.498.498 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.476 4.476 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1V1Zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
                         </svg><span>Add Products</span></a>
-                    <a href="editproducts.html" class="list-group-item list-group-item-action py-2 ripple"><!--<i
+                    <a href="editproducts.html" class="list-group-item list-group-item-action py-2 ripple active"><!--<i
                             class="fas fa-building fa-fw me-3"></i>-->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-pencil-square me-3" viewBox="0 0 16 16">
@@ -135,142 +138,81 @@
     <main style="margin-top: 58px">
         <div class="container pt-4">
             <!-- Content Row -->
-            <div class="row">
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-primary shadow h-100 py-2">
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold textcolor text-uppercase mb-1">
-                                        Earnings (Monthly)</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                </div>
-                                <div class="col-auto">
-                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-success shadow h-100 py-2">
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold textcolor text-uppercase mb-1">
-                                        Earnings (Annual)</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                                </div>
-                                <div class="col-auto">
-                                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Earnings (Monthly) Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-info shadow h-100 py-2">
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-info textcolor text-uppercase mb-1">Tasks
-                                    </div>
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-auto">
-                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="progress progress-sm mr-2">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
-                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pending Requests Card Example -->
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-warning shadow h-100 py-2">
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold textcolor text-uppercase mb-1">
-                                        Pending Requests</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                </div>
-                                <div class="col-auto">
-                                    <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="edit-icon" style="display: flex; justify-content: space-between;">
+                <h5><strong>Edit Products</strong></h5>
             </div>
-            <div class="row">
-                <!-- Area Chart -->
-                <div class="col-xl-8 col-lg-7 height: 200%">
-                    <div class="card shadow mb-4" style="height: 100%">
-                        <!-- Card Header - Dropdown -->
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="textcolor">Earnings Overview</h6>
-
-                        </div>
-                        <!-- Card Body -->
+            <div class="row mt-3 mb-3" style="gap: 50px;">
+                <div class="col-md-3 mx-lg-3">
+                    <div class="carditem" style="width: 18rem;">
+                        <span class="cardimg">
+                            <img src="Images/cards-1 himalaya_wellness_ashvagandha_tablet_60_s_0.jpg"
+                                class="card-img-top" style="width: 150px;height: 150px;"
+                                alt="himalaya_wellness_ashvagandha_tablet_60">
+                        </span>
                         <div class="card-body">
-                            <div class="chart-area">
-                                <canvas id="myAreaChart" style="height: 100%; width: 100%;"></canvas>
-                            </div>
+                            <h5 class="cardname">Himalaya Wellness Ashvagandha Tablet 60</h5>
+                            <p class="">
+                                <span>Best Price*</span>
+                                <br>
+                                <span style="color: #ef4281;">Rs. 190.00</span>
+                                <span>
+                                    <p>MRP<strike> Rs. 200.00</strike></p>
+                                </span>
+                            </p>
+                            <a href="#" class="btn btn-primary">Edit</a>
                         </div>
                     </div>
-                </div>
-                <!-- Pie Chart -->
-                <div class="col-xl-4 col-lg-7">
-                    <div class="card shadow mb-4" style="height: 100%">
-                        <!-- Card Header - Dropdown -->
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="textcolor">Revenue Sources</h6>
 
-                        </div>
-                        <!-- Card Body -->
+                </div>
+                <div class="col-md-3 mx-lg-3">
+
+                    <div class="carditem" style="width: 18rem;">
+                        <span class="cardimg">
+                            <img src="Images/cards-2 dolo_650_tablet_15s_35281_0_1.jpg" class="card-img-top"
+                                style="width: 150px;height: 150px;" alt="dolo_650_tablet_15s">
+                        </span>
                         <div class="card-body">
-                            <div class="chart-pie pt-4 pb-2">
-                                <canvas id="myPieChart"></canvas>
-                            </div>
-                            <div class="mt-4 text-center small">
-                                <span class="mr-2">
-                                    <i class="fas fa-circle text-primary"></i> Direct
+                            <h5 class="cardname">Dolo 650 Tablet 15s</h5>
+                            <p class="">
+                                <span>Best Price*</span>
+                                <br>
+                                <span style="color: #ef4281;">Rs. 27.07</span>
+                                <span>
+                                    <p>MRP<strike> Rs. 35.4.00</strike></p>
                                 </span>
-                                <span class="mr-2">
-                                    <i class="fas fa-circle text-success"></i> Social
-                                </span>
-                                <span class="mr-2">
-                                    <i class="fas fa-circle text-info"></i> Referral
-                                </span>
-                            </div>
+                            </p>
+                            <a href="#" class="btn btn-primary">Edit</a>
                         </div>
                     </div>
+
                 </div>
+                <div class="col-md-3 mx-lg-3">
+
+                    <div class="carditem" style="width: 18rem;">
+                        <span class="cardimg">
+                            <img src="Images/cards-3 himalaya_wellness_brahmi_tablet_60_s_0.jpg" class="card-img-top"
+                                style="width: 150px;height: 150px;" alt="himalaya_wellness_brahmi_tablet_60">
+                        </span>
+                        <div class="card-body">
+                            <h5 class="cardname">Himalaya Wellness Brahmi Tablet 60</h5>
+                            <p class="">
+                                <span>Best Price*</span>
+                                <br>
+                                <span style="color: #ef4281;">Rs. 180.00</span>
+                                <span>
+                                    <p>MRP<strike> Rs. 200.00</strike></p>
+                                </span>
+                            </p>
+                            <a href="#" class="btn btn-primary">Edit</a>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-        </div>
 
 
-
-
-
-        <script src="Chart.min.js"></script>
-        <!-- Page level custom scripts -->
-        <script src="chart-area-demo.js"></script>
-        <script src="chart-pie-demo.js"></script>
         <br>
         <div
             class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-dark">
