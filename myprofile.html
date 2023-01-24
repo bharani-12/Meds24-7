@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="admin.css">
-    <title>Edit Products</title>
+    <title>Add Products</title>
     <link rel="icon" href="Images/logo_icon.jpg" type="image/x-icon">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -43,7 +41,7 @@
                                 d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
                         </svg>
                         <!-- <i class="fas fa-building fa-fw me-3"></i>--><span>Products</span></a>
-                    <a href="addproducts.html" class="list-group-item list-group-item-action py-2 ripple"><!--<i
+                    <a href="addproducts.html" class="list-group-item list-group-item-action py-2 ripple "><!--<i
                             class="fas fa-building fa-fw me-3"></i>-->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-building-fill-add me-3" viewBox="0 0 16 16">
@@ -52,7 +50,7 @@
                             <path
                                 d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7.256A4.493 4.493 0 0 0 12.5 8a4.493 4.493 0 0 0-3.59 1.787A.498.498 0 0 0 9 9.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .39-.187A4.476 4.476 0 0 0 8.027 12H6.5a.5.5 0 0 0-.5.5V16H3a1 1 0 0 1-1-1V1Zm2 1.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3 0v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z" />
                         </svg><span>Add Products</span></a>
-                    <a href="editproducts.html" class="list-group-item list-group-item-action py-2 ripple active"><!--<i
+                    <a href="editproducts.html" class="list-group-item list-group-item-action py-2 ripple"><!--<i
                             class="fas fa-building fa-fw me-3"></i>-->
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-pencil-square me-3" viewBox="0 0 16 16">
@@ -136,83 +134,57 @@
 
     <!--Main layout-->
     <main style="margin-top: 58px">
-        <div class="container pt-4">
+        <div
+            class="container pt-4 d-flex flex-column justify-content-center align-text-center rounded-2 shadow bg-white">
             <!-- Content Row -->
-            <div class="edit-icon" style="display: flex; justify-content: space-between;">
-                <h5><strong>Edit Products</strong></h5>
-            </div>
-            <div class="row mt-3 mb-3" style="gap: 50px;">
-                <div class="col-md-3 mx-lg-3">
-                    <div class="carditem" style="width: 18rem;">
-                        <span class="cardimg">
-                            <img src="Images/cards-1 himalaya_wellness_ashvagandha_tablet_60_s_0.jpg"
-                                class="card-img-top" style="width: 150px;height: 150px;"
-                                alt="himalaya_wellness_ashvagandha_tablet_60">
-                        </span>
-                        <div class="card-body">
-                            <h5 class="cardname">Himalaya Wellness Ashvagandha Tablet 60</h5>
-                            <p class="">
-                                <span>Best Price*</span>
-                                <br>
-                                <span style="color: #ef4281;">Rs. 190.00</span>
-                                <span>
-                                    <p>MRP<strike> Rs. 200.00</strike></p>
-                                </span>
-                            </p>
-                            <a href="#" class="btn btn-primary">Edit</a>
-                        </div>
-                    </div>
+            <div class="row ">
+                <div class="col-md-4 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                        <div class="p-2 d-flex flex">
+                            <img class="rounded-circle mt-5" width="150px" src="Images/logo_icon.jpg">
 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-pencil-square icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                <path fill-rule="evenodd"
+                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                            </svg>
+                        </div>
+                        <span class="font-weight-bold">Admin</span>
+                        <span class="text-black-50">admin@mail.com</span>
+                    </div>
                 </div>
-                <div class="col-md-3 mx-lg-3">
-
-                    <div class="carditem" style="width: 18rem;">
-                        <span class="cardimg">
-                            <img src="Images/cards-2 dolo_650_tablet_15s_35281_0_1.jpg" class="card-img-top"
-                                style="width: 150px;height: 150px;" alt="dolo_650_tablet_15s">
-                        </span>
-                        <div class="card-body">
-                            <h5 class="cardname">Dolo 650 Tablet 15s</h5>
-                            <p class="">
-                                <span>Best Price*</span>
-                                <br>
-                                <span style="color: #ef4281;">Rs. 27.07</span>
-                                <span>
-                                    <p>MRP<strike> Rs. 35.4.00</strike></p>
-                                </span>
-                            </p>
-                            <a href="#" class="btn btn-primary">Edit</a>
+                <div class="col-md-8 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="text-right">Profile Settings</h4>
                         </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3 mx-lg-3">
-
-                    <div class="carditem" style="width: 18rem;">
-                        <span class="cardimg">
-                            <img src="Images/cards-3 himalaya_wellness_brahmi_tablet_60_s_0.jpg" class="card-img-top"
-                                style="width: 150px;height: 150px;" alt="himalaya_wellness_brahmi_tablet_60">
-                        </span>
-                        <div class="card-body">
-                            <h5 class="cardname">Himalaya Wellness Brahmi Tablet 60</h5>
-                            <p class="">
-                                <span>Best Price*</span>
-                                <br>
-                                <span style="color: #ef4281;">Rs. 180.00</span>
-                                <span>
-                                    <p>MRP<strike> Rs. 200.00</strike></p>
-                                </span>
-                            </p>
-                            <a href="#" class="btn btn-primary">Edit</a>
+                        <div class="row mt-2">
+                            <div class="col-md-6"><label class="form-label">Name</label><input type="text"
+                                    class="form-control" placeholder="first name" value=""></div>
+                            <div class="col-md-6"><label class="form-label">Surname</label><input type="text"
+                                    class="form-control" value="" placeholder="surname"></div>
                         </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12"><label class="form-label">Mobile Number</label><input type="text"
+                                    class="form-control" placeholder="enter phone number" value=""></div>
+                            <div class="col-md-12"><label class="form-label">Address Line 1</label><input type="text"
+                                    class="form-control" placeholder="enter address line 1" value=""></div>
+                            <div class="col-md-12"><label class="form-label">Address Line 2</label><input type="text"
+                                    class="form-control" placeholder="enter address line 2" value=""></div>
+                            <div class="col-md-12"><label class="form-label">State</label><input type="text"
+                                    class="form-control" placeholder="enter address line 2" value=""></div>
+                            <div class="col-md-12"><label class="form-label">Email ID</label><input type="text"
+                                    class="form-control" placeholder="enter email id" value=""></div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save
+                                Profile</button></div>
                     </div>
-
                 </div>
 
             </div>
         </div>
-
-
         <br>
         <div
             class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-dark">
